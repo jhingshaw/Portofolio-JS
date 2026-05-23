@@ -24,4 +24,4 @@ Pihak lain tidak diperbolehkan untuk:
 
 ## Catatan
 
-Project ini aman untuk dipublikasikan oleh pemiliknya selama tidak menambahkan data rahasia seperti password, token API, informasi akun private, atau data sensitif lainnya.
+Project ini aman untuk dipublikasikan oleh pemiliknya selama tidak menambahkan data rahasia seperti password, token API, informasi akun private, cookie/session, atau data sensitif lainnya.

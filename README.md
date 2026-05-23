@@ -1,32 +1,49 @@
-# JhingShaw — Portfolio 2026
+# JhingShaw — Premium Creative Portfolio
 
-Website portfolio pribadi milik **JhingShaw**, seorang siswa kelas 8 SMP di Bogor yang sedang belajar coding, web development, dan cybersecurity.
+Website portfolio pribadi milik **JhingShaw**, seorang siswa kelas 8 SMP di Bogor yang sedang belajar coding, web development, UI, dan cybersecurity.
 
-Project ini dibuat sebagai ruang publik untuk menampilkan perjalanan belajar, eksperimen UI, catatan project, dan perkembangan skill secara bertahap.
+Versi ini dibuat lebih premium dari template biasa. Fokusnya bukan hanya “website jadi”, tapi membangun identitas digital yang terlihat serius, modern, aman dipublikasikan, dan tetap jujur sebagai portfolio belajar.
 
-## ✨ Preview Konsep
+## ✨ Highlight
 
-Portfolio ini mengusung gaya modern 2026 dengan nuansa:
+- Hero section cinematic dengan aurora background
+- Glassmorphism + modern dark interface
+- Animated terminal card
+- Project showcase interaktif
+- Skill matrix dengan progress animation
+- Learning roadmap yang rapi
+- Responsive untuk HP, tablet, dan desktop
+- Siap deploy ke Vercel
+- Tidak memakai data rahasia atau API key
+- Bebas dipublikasikan oleh pemilik
 
-- Dark futuristic interface
-- Gradient glow dan glassmorphism
-- Bento-style project cards
-- Animasi halus menggunakan Framer Motion
-- Layout responsif untuk HP, tablet, dan desktop
-- Konten yang mudah diedit untuk kebutuhan portfolio pribadi
+## 🧠 Identitas Portfolio
+
+Portfolio ini menampilkan JhingShaw sebagai:
+
+> Student Developer & Cybersecurity Learner
+
+Fokus belajar:
+
+- HTML, CSS, dan JavaScript
+- React dan Vite
+- UI design modern
+- GitHub workflow
+- Dasar keamanan web
+- Project kecil yang bisa dipublikasikan
 
 ## 🚀 Tech Stack
 
 - **React**
 - **Vite**
-- **CSS Custom**
 - **Framer Motion**
-- **Lucide React**
+- **Custom CSS**
+- **Responsive Design**
 
 ## 📁 Struktur Project
 
 ```txt
-jhingshaw-portfolio/
+jhingshaw-portfolio-premium/
 ├─ index.html
 ├─ package.json
 ├─ README.md
@@ -37,22 +54,20 @@ jhingshaw-portfolio/
    └─ index.css
 ```
 
-## 🛠️ Cara Menjalankan di Lokal
+## 🛠️ Jalankan di Lokal
 
 ```bash
 npm install
 npm run dev
 ```
 
-Setelah itu buka link lokal yang muncul di terminal.
-
-## 📦 Cara Build
+## 📦 Build Production
 
 ```bash
 npm run build
 ```
 
-Hasil build akan masuk ke folder:
+Output production akan dibuat di folder:
 
 ```txt
 dist/
@@ -65,12 +80,12 @@ dist/
 3. Klik **Add New Project**.
 4. Import repository GitHub.
 5. Pilih framework **Vite**.
-6. Pastikan setting berikut:
+6. Pastikan:
    - Build Command: `npm run build`
    - Output Directory: `dist`
 7. Klik **Deploy**.
 
-## ✏️ Cara Edit Data Portfolio
+## ✏️ Cara Edit Konten
 
 Buka file:
 
@@ -78,37 +93,31 @@ Buka file:
 src/App.jsx
 ```
 
-Lalu edit bagian berikut:
+Bagian penting yang bisa diedit:
 
 ```js
 const profile = {...}
 const projects = [...]
 const skills = [...]
-const experience = [...]
+const roadmap = [...]
 ```
 
-## 🔐 Catatan Publikasi Aman
+## 🔐 Catatan Keamanan Publikasi
 
-Website ini boleh dipublikasikan secara gratis di platform seperti:
-
-- Vercel
-- Netlify
-- GitHub Pages
-- Cloudflare Pages
-
-Sebelum publikasi, pastikan tidak memasukkan:
+Sebelum publish, jangan pernah memasukkan:
 
 - Password
 - Token API
-- Alamat rumah lengkap
+- Cookie/session
 - Nomor HP pribadi
-- Screenshot akun/private dashboard
+- Alamat rumah lengkap
+- Screenshot dashboard private
 - Data bug bounty yang belum boleh diungkap
 
 ## © Hak Cipta
 
 Copyright © 2026 **JhingShaw**.
 
-Website ini dibuat untuk portfolio pribadi dan bebas dipublikasikan oleh pemiliknya. Desain, teks, dan identitas personal di dalam project ini tidak boleh diklaim ulang oleh pihak lain tanpa izin.
+Website ini dibuat sebagai portfolio pribadi dan boleh dipublikasikan secara gratis oleh pemiliknya. Identitas, teks personal, dan konten portfolio tidak boleh diklaim ulang oleh pihak lain tanpa izin.
 
 Lihat detail di file [LICENSE.md](./LICENSE.md).
