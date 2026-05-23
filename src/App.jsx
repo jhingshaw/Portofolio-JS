@@ -3,8 +3,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import {
   ArrowUpRight,
   Code2,
-  Github,
-  Linkedin,
+  Globe,
   Mail,
   Menu,
   Moon,
@@ -18,84 +17,84 @@ import {
 
 const profile = {
   name: "JhingShaw",
-  role: "Security Researcher & Full-Stack Developer",
+  role: "Student Developer & Cybersecurity Learner",
   tagline:
-    "Saya membangun pengalaman digital yang cepat, aman, dan memorable — dari website premium sampai sistem yang siap diuji di dunia nyata.",
+    "Seorang siswa kelas 8 SMP di Bogor yang sedang belajar coding, web development, dan keamanan siber. Saya suka mengeksplorasi cara kerja website, membangun project kecil, memahami dasar-dasar keamanan aplikasi, dan terus berkembang lewat latihan, riset, serta eksperimen kreatif.",
   location: "Bogor, Indonesia",
   email: "ajjayv2@gmail.com",
   github: "https://github.com/jhingshaw",
-  linkedin: "https://linkedin.com/in/-",
+  linkedin: "",
 };
 
 const projects = [
   {
-    title: "SentinelOS Dashboard",
-    category: "Security",
-    year: "2026",
-    impact: "+42% faster triage",
-    description:
-      "Dashboard threat intelligence dengan scoring risiko, workflow incident, dan insight berbasis AI untuk tim security.",
-    stack: ["React", "Node", "AI", "PostgreSQL"],
-  },
-  {
-    title: "Flux Commerce",
+    title: "Personal Portfolio Website",
     category: "Web App",
-    year: "2025",
-    impact: "99.98% uptime",
+    year: "2026",
+    impact: "Ready to publish",
     description:
-      "Platform e-commerce premium dengan checkout cepat, personalization, dan analytics conversion-first.",
-    stack: ["Vite", "Stripe", "Edge", "Analytics"],
+      "Website portofolio pribadi dengan tampilan modern, responsif, animasi halus, dan struktur yang mudah dikembangkan.",
+    stack: ["React", "Vite", "CSS", "Framer Motion"],
   },
   {
-    title: "Bug Bounty Lab",
+    title: "Coding Practice Lab",
+    category: "Learning",
+    year: "2026",
+    impact: "Daily progress",
+    description:
+      "Kumpulan latihan coding untuk memahami HTML, CSS, JavaScript, React, logika pemrograman, dan problem solving.",
+    stack: ["JavaScript", "React", "GitHub", "Practice"],
+  },
+  {
+    title: "Cybersecurity Notes",
     category: "Security",
     year: "2026",
-    impact: "120+ labs solved",
+    impact: "Security mindset",
     description:
-      "Ruang belajar interaktif untuk XSS, IDOR, SSRF, auth bypass, dan report writing berbasis real-world scenario.",
-    stack: ["Docker", "Go", "React", "CI/CD"],
+      "Catatan belajar tentang dasar keamanan web, bug bounty, responsible disclosure, dan cara berpikir seperti security researcher.",
+    stack: ["Web Security", "Notes", "Research", "Ethics"],
   },
   {
-    title: "Nebula Portfolio Kit",
+    title: "Frontend UI Experiments",
     category: "Branding",
     year: "2026",
-    impact: "3.1s first load",
+    impact: "Creative exploration",
     description:
-      "Template portofolio cinematic dengan bento cards, gradient mesh, animated sections, dan konten yang mudah diedit.",
-    stack: ["Framer Motion", "React", "Design System"],
+      "Eksperimen tampilan UI seperti glassmorphism, bento layout, gradient mesh, micro-interaction, dan desain mobile-first.",
+    stack: ["UI Design", "CSS", "Animation", "Responsive"],
   },
 ];
 
 const skills = [
-  "Web Security",
+  "HTML / CSS",
+  "JavaScript",
   "React / Vite",
-  "API Design",
-  "Bug Bounty",
-  "UI Engineering",
-  "Automation",
-  "Cloud Deploy",
-  "Performance",
+  "Web Security Basics",
+  "Bug Bounty Learning",
+  "UI Experiments",
+  "GitHub",
+  "Problem Solving",
 ];
 
 const experience = [
   {
     period: "2026 — Now",
-    title: "Independent Security Researcher",
-    body: "Menganalisis aplikasi web, menulis laporan kerentanan yang actionable, dan membantu tim memperkuat posture keamanan.",
+    title: "Student Developer & Cybersecurity Learner",
+    body: "Belajar membuat website modern, memahami dasar JavaScript dan React, serta mulai mengenal konsep keamanan aplikasi web secara etis.",
   },
   {
-    period: "2024 — 2026",
-    title: "Full-Stack Developer",
-    body: "Membangun produk digital end-to-end dengan fokus pada UX, reliability, dan clean architecture.",
+    period: "2025 — 2026",
+    title: "Coding Practice Journey",
+    body: "Membangun project kecil, mencoba desain UI, memperbaiki error, dan membiasakan diri memakai GitHub untuk menyimpan kode.",
   },
   {
-    period: "2022 — 2024",
-    title: "Frontend Engineer",
-    body: "Mengubah desain high-fidelity menjadi interface responsif, animatif, dan cepat diakses lintas device.",
+    period: "Ongoing",
+    title: "Creative Tech Exploration",
+    body: "Mengeksplorasi ide-ide baru seputar website, desain interaktif, automation, dan cara membuat karya digital yang bisa dipublikasikan.",
   },
 ];
 
-const filters = ["All", "Security", "Web App", "Branding"];
+const filters = ["All", "Security", "Web App", "Learning", "Branding"];
 const navItems = ["Home", "Projects", "Skills", "Contact"];
 
 function Button({ children, variant = "primary", href, className = "" }) {
@@ -265,7 +264,7 @@ export default function App() {
             className="availability"
           >
             <span className="pulse-dot" />
-            Available for selective collaborations
+            Open to learn, build, and collaborate
           </motion.div>
 
           <motion.h1
@@ -273,7 +272,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.08 }}
           >
-            Designing secure digital products with cinematic precision.
+            Building creative websites while learning code and cybersecurity.
           </motion.h1>
 
           <motion.p
@@ -376,7 +375,7 @@ export default function App() {
           <div>
             <h2>Projects built to feel premium and perform under pressure.</h2>
             <p>
-              Kombinasi visual high-end, architecture bersih, dan security-first thinking untuk hasil yang terlihat bagus sekaligus kuat.
+              Kumpulan project belajar yang dibuat untuk melatih coding, desain UI, problem solving, dan security mindset secara bertahap.
             </p>
           </div>
 
@@ -406,7 +405,7 @@ export default function App() {
             <SectionLabel>Capabilities</SectionLabel>
             <h2>Skillset yang memadukan design, engineering, dan security.</h2>
             <p>
-              Cocok untuk portofolio developer, bug hunter, security researcher, creative technologist, atau founder teknis.
+              Dibangun sebagai portofolio belajar yang jujur, rapi, dan mudah dikembangkan seiring bertambahnya skill.
             </p>
           </div>
 
@@ -454,9 +453,9 @@ export default function App() {
           <div className="contact-grid-bg" />
           <div className="contact-content">
             <SectionLabel>Let’s Build</SectionLabel>
-            <h2>Punya ide yang harus terlihat premium dan tetap secure?</h2>
+            <h2>Mari belajar, membangun, dan berkembang lewat project nyata.</h2>
             <p>
-              Kirim brief singkat, target audience, dan contoh referensi. Saya akan bantu ubah menjadi produk digital yang tajam secara visual dan kuat secara teknis.
+              Terbuka untuk belajar, diskusi project, kolaborasi kecil, dan eksplorasi ide seputar website, coding, serta keamanan web secara etis.
             </p>
 
             <div className="contact-actions">
@@ -464,11 +463,13 @@ export default function App() {
                 <Mail size={16} /> Email Me
               </Button>
               <Button href={profile.github} variant="secondary">
-                <Github size={16} /> GitHub
+                <Globe size={16} /> GitHub
               </Button>
-              <Button href={profile.linkedin} variant="secondary">
-                <Linkedin size={16} /> LinkedIn
-              </Button>
+                {profile.linkedin && (
+                <Button href={profile.linkedin} variant="secondary">
+                  <Globe size={16} /> LinkedIn
+                </Button>
+              )}
             </div>
 
             <div className="contact-note">
@@ -480,7 +481,7 @@ export default function App() {
       </section>
 
       <footer className="footer">
-        <p>© 2026 {profile.name}. Crafted with React, motion, and security-first thinking.</p>
+        <p>© 2026 {profile.name}. All rights reserved. Built with React, motion, and curiosity.</p>
         <p>{profile.location}</p>
       </footer>
     </main>
